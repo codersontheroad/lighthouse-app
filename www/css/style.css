@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.help{
+    margin-top: 10%;
+    background-image: "/img/buoy.png";
+    background-color: #e74c3c;
+    width: 200px;
+    height:200px;
+    border: 7px solid #c0392b;
+    border-top: none;
+    border-left: none;
+    border-radius: 50px;
+}
+.help:active{
+    background-image: "/img/buoy.png";
+    background-color: #e74c3c;
+    width: 200px;
+    height:200px;
+    border: 7px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 50px;
+}
+ion-pane{
+    text-align: center;
+}
