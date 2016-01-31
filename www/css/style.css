@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
 .help{
-    margin-top: 10%;
-    background-image: "/img/buoy.png";
+    margin-top: 15%;
+    background-image: url("/img/buoy.png");
     background-color: #e74c3c;
     width: 200px;
     height:200px;
@@ -11,7 +11,7 @@
     border-radius: 50px;
 }
 .help:active{
-    background-image: "/img/buoy.png";
+    background-image: url("/img/buoy.png");
     background-color: #e74c3c;
     width: 200px;
     height:200px;
@@ -22,4 +22,8 @@
 }
 ion-pane{
     text-align: center;
+}
+
+.message{
+    color: #000;
 }

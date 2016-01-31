@@ -26,7 +26,9 @@ angular.module('starter', ['ionic', 'firebase'])
 //     var itemsRef = new Firebase("https://gttrzh5n8tm.firebaseio-demo.com/");
 //     return $firebaseArray(itemsRef);
 // })
-.controller('AlertCtrl', function($scope){
+.controller('AlertCtrl', function($scope, $firebaseArray){
+  var ref = new Firebase("https://rescue-lighthouse.firebaseio.com/");
+  $scope.messages = $firebaseArray(ref);
   $scope.sendAlert = function() {
     console.log('hello');
     var onSuccess = function(position, $scope) {
@@ -43,7 +45,7 @@ angular.module('starter', ['ionic', 'firebase'])
       time = time.substring(0,g);
       console.log(time);
       // });
-      var myDataRef = new Firebase('https://gttrzh5n8tm.firebaseio-demo.com/');
+      var myDataRef = new Firebase('https://sizzling-inferno-4233.firebaseio.com/');
       myDataRef.push({
             "id": id,
             "longitude": longitude,
